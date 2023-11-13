@@ -5,4 +5,4 @@
 => SELECT name,area FROM cities;
 
 // you can print in any order and can print same column multiple times as well
-=> SELECT area, name, area FROM  citites;
+=> SELECT area, name, area FROM citites;

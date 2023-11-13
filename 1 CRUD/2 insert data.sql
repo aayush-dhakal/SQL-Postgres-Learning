@@ -1,6 +1,7 @@
 # insert single value
 => INSERT INTO cities(name,country,population,area) 
 VALUES ('Tokyo','Japan',3809090,675);
+// Note: Donot use double quotes for string
 
 // you can insert columns in any order as long as value are properly provided for eg:
 => INSERT INTO cities(name,population,area,country,) 
