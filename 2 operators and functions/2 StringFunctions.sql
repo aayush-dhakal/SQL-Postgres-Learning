@@ -5,7 +5,7 @@
 => SELECT 
     CONCAT(UPPER(name), ', ', UPPER(country)) AS location 
     FROM cities;
-    // the same can be done as:
+    -- the same can be done as:
     => SELECT 
         UPPER(CONCAT(name), ', ', UPPER(country)) AS location 
         FROM cities;

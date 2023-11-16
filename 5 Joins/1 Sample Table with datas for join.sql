@@ -6,13 +6,13 @@ CREATE TABLE users(
 CREATE TABLE photos (
   id SERIAL PRIMARY KEY,
   url VARCHAR(200),
-  user_id INTEGER REFERENCES users(id) ON DELETE CASCADE // this user_id refers to the user who created the photo post
+  user_id INTEGER REFERENCES users(id) ON DELETE CASCADE -- this user_id refers to the user who created the photo post
 );
 
 CREATE TABLE comments (
   id SERIAL PRIMARY KEY,
   contents VARCHAR(240),
-  user_id INTEGER REFERENCES users(id) ON DELETE CASCADE, // this user_id refers to the user who commented, if you rely on the user_id from photos then we will assume that the user who created the photos is the same who commented which is not what we want as any user can commnet on any photos so we have to define user_id in comments 
+  user_id INTEGER REFERENCES users(id) ON DELETE CASCADE, -- this user_id refers to the user who commented, if you rely on the user_id from photos then we will assume that the user who created the photos is the same who commented which is not what we want as any user can commnet on any photos so we have to define user_id in comments 
   photo_id INTEGER REFERENCES photos(id) ON DELETE CASCADE
 );
 
@@ -26,26 +26,26 @@ VALUES
 
 INSERT INTO photos (url, user_id)
 VALUES
-  ('https://santina.net', 3),
-        ('https://alayna.net', 5),
-        ('https://kailyn.name', 3),
-        ('http://marjolaine.name', 1),
-        ('http://chet.net', 5),
-        ('http://jerrold.org', 2),
-        ('https://meredith.net', 4),
-        ('http://isaias.net', 4),
-        ('http://dayne.com', 4),
-        ('http://colten.net', 2),
-        ('https://adelbert.biz', 5),
-        ('http://kolby.org', 1),
-        ('https://deon.biz', 2),
-        ('https://marina.com', 5),
-        ('http://johnson.info', 1),
-        ('https://linda.info', 2),
-        ('https://tyrique.info', 4),
-        ('http://buddy.info', 5),
-        ('https://elinore.name', 2),
-        ('http://sasha.com', 3);
+  ('https:--santina.net', 3),
+        ('https:--alayna.net', 5),
+        ('https:--kailyn.name', 3),
+        ('http:--marjolaine.name', 1),
+        ('http:--chet.net', 5),
+        ('http:--jerrold.org', 2),
+        ('https:--meredith.net', 4),
+        ('http:--isaias.net', 4),
+        ('http:--dayne.com', 4),
+        ('http:--colten.net', 2),
+        ('https:--adelbert.biz', 5),
+        ('http:--kolby.org', 1),
+        ('https:--deon.biz', 2),
+        ('https:--marina.com', 5),
+        ('http:--johnson.info', 1),
+        ('https:--linda.info', 2),
+        ('https:--tyrique.info', 4),
+        ('http:--buddy.info', 5),
+        ('https:--elinore.name', 2),
+        ('http:--sasha.com', 3);
 
 INSERT INTO comments (contents, user_id, photo_id)
 VALUES
@@ -151,7 +151,7 @@ VALUES
         ('Minima dolorem reiciendis excepturi culpa sapiente eos deserunt ut.', 3, 3);
 
 INSERT INTO photos (url, user_id)
-VALUES ('https://banner.jpg', NULL);
+VALUES ('https:--banner.jpg', NULL);
 
 INSERT INTO users (username)
 VALUES ('Nicole');
