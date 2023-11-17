@@ -1,0 +1,6 @@
+# In postgres
+- first create database
+- then in schema select query tool and write scripts to create tables
+- then select the table and right click on it and select scripts -> insert script then write sql for inserting data. OR, you can open up query tool and write insert script there.
+(You can select any table and write script for any other table, just make sure at top the correct database is selected)
+- to write select script right click on the table and select query tool then write select statement with you filters. (You can select any table and write script for any other table, just make sure at top the correct database is selected)
