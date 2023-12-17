@@ -54,6 +54,7 @@ CREATE TABLE likes (
 	UNIQUE(user_id, post_id, comment_id)
 );
 
+-- for user taged in post image
 CREATE TABLE photo_tags (
 	id SERIAL PRIMARY KEY,
 	created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
@@ -66,6 +67,7 @@ CREATE TABLE photo_tags (
 	UNIQUE(user_id, post_id)
 );
 
+-- for user taged in post caption
 CREATE TABLE caption_tags (
 	id SERIAL PRIMARY KEY,
 	created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,

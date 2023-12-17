@@ -22,7 +22,6 @@ WITH RankedProducts AS (
     ROW_NUMBER() OVER (PARTITION BY department ORDER BY price DESC) AS rank
   FROM products
 )
-
 SELECT
   name,
   department,
